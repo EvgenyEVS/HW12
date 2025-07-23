@@ -15,6 +15,6 @@ public class Author {
 
     public String getAuthorSurname() {
         return authorSurname;
-    }
 
+    }
 }
