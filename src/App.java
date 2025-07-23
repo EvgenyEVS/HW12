@@ -21,6 +21,5 @@ public class App {
         System.out.println("Книга " + mysteriousIsland.getBookName() + " переиздана в " + mysteriousIsland.getPublicationYear() +
                 " году" + " с красочными картинками для детей.");
 
-
     }
 }
