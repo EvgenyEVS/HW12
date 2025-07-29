@@ -7,19 +7,25 @@ public class App {
         Book warAndPeace = new Book("Война и мир", 1886, levTolstoy);
         Book mysteriousIsland = new Book("Mysterious Island", 2021, julesVerne);
 
-        System.out.println("Удивительное погружение в эпоху войн против Наполеона, \n" +
-                "со сложным сюжетом и тонкими переживаниями. Настоящая русская классика! \n" +
-                "Рекомендуем книгу " + levTolstoy.getAuthorName() + " " + levTolstoy.getAuthorSurname() + " " + warAndPeace.getBookName()
-                + ", впервые издана в " + warAndPeace.getPublicationYear() + " году.");
 
+        System.out.println("Метод toString. " + levTolstoy.toString());
+        System.out.println("Метод toString. " + julesVerne.toString());
         System.out.println();
-        System.out.println(mysteriousIsland.getBookName() + " - это увлекательные приключения. " + julesVerne.getAuthorName() + " " + julesVerne.getAuthorSurname()
-                + " как всегда \nпомещает своих героев в необычные условия, на этот раз - " + mysteriousIsland.getBookName() + "!");
 
-        mysteriousIsland.setPublicationYear(2024);
+        System.out.println("Метод toString. " + warAndPeace.toString());
+        System.out.println("Метод toString. " + mysteriousIsland.toString());
         System.out.println();
-        System.out.println("Книга " + mysteriousIsland.getBookName() + " переиздана в " + mysteriousIsland.getPublicationYear() +
-                " году" + " с красочными картинками для детей.");
+
+        System.out.println("Результат сравнения объектов (Author.) " +
+                "levTolstoy и julesVerne: " + levTolstoy.equals(julesVerne));
+        System.out.println("levTolstoy.hashCode() = " + levTolstoy.hashCode());
+        System.out.println("julesVerne.hashCode() = " + julesVerne.hashCode());
+        System.out.println();
+
+        System.out.println("Результат сравнения объектов (Book.) " +
+                "mysteriousIsland и warAndPeace: " + mysteriousIsland.equals(warAndPeace));
+        System.out.println("mysteriousIsland.hashCode() = " + mysteriousIsland.hashCode());
+        System.out.println("warAndPeace.hashCode() = " + warAndPeace.hashCode());
 
     }
 }
